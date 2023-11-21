@@ -6,8 +6,8 @@ using UnityEngine;
 
 public class TimePassedAction : Action
 {
-    private float currentTime;
-    public float maxTime;
+    private float currentTime; //para hacer
+    public float maxTime;      //crono
 
     public override void Init(GameObject owner)
     {
@@ -16,7 +16,7 @@ public class TimePassedAction : Action
 
     public override bool Check(GameObject owner)
     {
-        currentTime += Time.deltaTime;
+        currentTime += Time.deltaTime; //framerate
             Debug.LogWarning(currentTime);
         if (currentTime > maxTime)
         {
