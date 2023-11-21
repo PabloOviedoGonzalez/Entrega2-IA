@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b42459d0b1639244b47d49cb3b80d94, type: 3}
+  m_Name: (S) Huir
+  m_EditorClassIdentifier: 
+  parametres:
+  - actionParameter:
+    - action: {fileID: 11400000, guid: e27482239b25b4c419edadf008761921, type: 2}
+      actionValue: 1
+    - action: {fileID: 11400000, guid: 2639a8aa047cb094295c8a2710c95cdb, type: 2}
+      actionValue: 1
+    or: 0
+    nextState: {fileID: 11400000, guid: faece7262cbf8c742b9577d0c62f073b, type: 2}
+  - actionParameter:
+    - action: {fileID: 11400000, guid: 2639a8aa047cb094295c8a2710c95cdb, type: 2}
+      actionValue: 0
+    or: 0
+    nextState: {fileID: 11400000, guid: 682bdf6cd8c95314b95b9aaf620d0d17, type: 2}

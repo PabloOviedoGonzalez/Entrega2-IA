@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9065fb8a7c24e8b49a43353f345197b4, type: 3}
+  m_Name: (S) Confused2
+  m_EditorClassIdentifier: 
+  parametres:
+  - actionParameter:
+    - action: {fileID: 11400000, guid: e27482239b25b4c419edadf008761921, type: 2}
+      actionValue: 1
+    or: 0
+    nextState: {fileID: 11400000, guid: faece7262cbf8c742b9577d0c62f073b, type: 2}
