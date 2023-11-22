@@ -16,7 +16,7 @@ public class ConfusedState : State
     public override State Run(GameObject owner) //sobreescribimos el run del padre
     {
 
-        owner.transform.Rotate(Vector3.up, 20);
+        owner.transform.Rotate(Vector3.up, 20); //rotamos al agente
         return base.Run(owner);
     }
 }

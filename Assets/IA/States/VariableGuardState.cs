@@ -13,7 +13,7 @@ public class VariableGuardState : State
 
     public override void Init(GameObject owner) //sobreescribimos el estado inicial como si fuese el start del agente
     {
-        guardPoint = owner.transform.position;
+        guardPoint = owner.transform.position; //le decimos q el guardpoint sea la posicion del agente
         base.Init(owner); //estado inicial del padre
     }
     public override State Run(GameObject owner) //sobreescribimos el run del padre

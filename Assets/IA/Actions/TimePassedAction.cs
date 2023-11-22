@@ -11,7 +11,7 @@ public class TimePassedAction : Action
 
     public override void Init(GameObject owner)
     {
-        currentTime = 0;
+        currentTime = 0; //cada vez q se incie la accion resetamos el contador
     }
 
     public override bool Check(GameObject owner)

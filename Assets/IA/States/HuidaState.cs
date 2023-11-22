@@ -14,13 +14,14 @@ public class HuidaState : State
     {
         base.Init(owner); //estado inicial del padre
         rndPos = new Vector3(Random.Range(owner.transform.position.x + 200, owner.transform.position.x - 200), owner.transform.position.y, Random.Range(owner.transform.position.z + 200, owner.transform.position.z - 200));
-        animator = owner.GetComponentInChildren<Animator>();
+        //Le damos un destino random al agente
+        animator = owner.GetComponentInChildren<Animator>(); //accedemos al animator
     }
     public override State Run(GameObject owner) //sobreescribimos el run del padre
     {
-        animator.SetBool("Walk_Anim", true);
-        navMeshAgent.SetDestination(rndPos);
-        if(navMeshAgent.remainingDistance < 2)
+        animator.SetBool("Walk_Anim", true); //cambiamos el bool de walk a true
+        navMeshAgent.SetDestination(rndPos); //le decimos al agnete q vaya al punto random
+        if(navMeshAgent.remainingDistance < 2) //si esta cerca del pùnto random le damos uno nuevo
         {
             rndPos = new Vector3(Random.Range(owner.transform.position.x + 200, owner.transform.position.x - 200), owner.transform.position.y, Random.Range(owner.transform.position.z + 200, owner.transform.position.z - 200));
 

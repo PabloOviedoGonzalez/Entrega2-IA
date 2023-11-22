@@ -16,20 +16,20 @@ public class EnemyDamage : MonoBehaviour
     {
         currentTime += Time.deltaTime;
 
-        Health healthCmp = other.GetComponent<Health>();
+        Health healthCmp = other.GetComponent<Health>(); //accedemos a la health
         if (healthCmp)
         {
-            if (currentTime >= maxTime)
+            if (currentTime >= maxTime) // si el tiempo pasa
             {
-                healthCmp.actualHealth -= damage;
-                currentTime = 0;
+                healthCmp.actualHealth -= damage; //le quitamos vida
+                currentTime = 0; //y reiniciamos el tiempo
             }
         }
     }
 
-    private void OnTriggerExit(Collider other)
+    private void OnTriggerExit(Collider other) //si sale del trigger ponemos el crono a 0
     {
-        currentTime = 0;
+        currentTime = 0; 
     }
 
     //private void (Collision collision)

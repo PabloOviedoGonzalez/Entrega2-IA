@@ -14,7 +14,7 @@ public class DeadState : State
     }
     public override State Run(GameObject owner) //sobreescribimos el run del padre
     {
-        Destroy(owner);
+        Destroy(owner); //destruimos al agente
 
         return base.Run(owner);
     }

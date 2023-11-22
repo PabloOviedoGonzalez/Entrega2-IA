@@ -15,7 +15,7 @@ public class Health : MonoBehaviour
 
         if(actualHealth <= 0)
         {
-            GameManager.instance.ChangeScene("Menu");
+            GameManager.instance.ChangeScene("Menu"); //si la vida llega a 0 cambiamos la escena al menu
         }
     }
     

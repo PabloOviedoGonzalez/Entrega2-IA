@@ -13,14 +13,14 @@ public class PlayerHealth : MonoBehaviour
 
     private void Start()
     {
-        Health = Maxhealth;
+        Health = Maxhealth; //igualamos la vida a la maxima vida
         healthbar.InicializeHealth(Health);
     }
   
 
     public void GetDamage(float damage)
     {
-        Health -= damage;
+        Health -= damage; //disminuimos la vida
         healthbar.ChangeHealth(Health);
 
         if (Health <= 0)

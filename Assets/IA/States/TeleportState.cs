@@ -19,7 +19,7 @@ public class TeleportState : State
 
     public override State Run(GameObject owner) //sobreescribimos el run del padre
     {
-        Vector3 randomPoint = owner.transform.position + Random.insideUnitSphere * 500;
+        Vector3 randomPoint = owner.transform.position + Random.insideUnitSphere * 500; //le damos un punto random dentro de una esfera
         NavMeshHit hit;
         if(NavMesh.SamplePosition(randomPoint, out hit, 5, NavMesh.AllAreas))
         {
